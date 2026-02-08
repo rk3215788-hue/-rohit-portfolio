@@ -9,6 +9,24 @@
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
 body{background:#0f0f0f;color:#fff;scroll-behavior:smooth}
+.top-line{
+  position:absolute;
+  top:40px;
+  font-size:18px;
+  letter-spacing:3px;
+  color:#00ffcc;
+  opacity:0.8;
+  animation:fadeSlide 2s ease-in-out infinite alternate;
+}
+
+@keyframes fadeSlide{
+  from{transform:translateY(-10px);opacity:0.4}
+  to{transform:translateY(10px);opacity:1}
+}
+
+.hero{
+  position:relative;
+}
 
 /* HERO SECTION */
 .hero{
@@ -76,6 +94,27 @@ footer{
   margin-top:10px;
   color:#00ffcc;
   font-weight:600
+}/* STATS + EXTRA SECTION */
+.stats{
+  display:flex;
+  justify-content:space-around;
+  flex-wrap:wrap;
+  margin-top:40px;
+  gap:20px;
+}
+.stat-box{
+  background:#1b1b1b;
+  padding:20px 30px;
+  border-radius:12px;
+  box-shadow:0 0 15px #00ffcc33;
+}
+.stat-box h3{
+  color:#00ffcc;
+  font-size:28px;
+}
+.stat-box p{
+  color:#ccc;
+  font-size:14px;
 }
 </style>
 </head>
@@ -84,11 +123,28 @@ footer{
 
 <!-- HERO -->
 <header class="hero">
+  <div class="top-line">
+  CREATIVE • CINEMATIC • SCROLL STOPPING EDITS
+</div>
   <img src="profile.jpg" class="profile-img">
   <h1>Hi, I'm Rohit</h1>
   <p>Professional Video Editor | Reels • Shorts • Long Videos</p>
   <a href="#portfolio" class="btn">View My Work</a>
 </header>
+<section class="stats">
+  <div class="stat-box">
+    <h3>50+</h3>
+    <p>Projects Completed</p>
+  </div>
+  <div class="stat-box">
+    <h3>20+</h3>
+    <p>Happy Clients</p>
+  </div>
+  <div class="stat-box">
+    <h3>1M+</h3>
+    <p>Total Views Generated</p>
+  </div>
+</section>
 
 <!-- ABOUT -->
 <section id="about">
